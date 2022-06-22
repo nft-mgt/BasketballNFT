@@ -16,9 +16,19 @@ import "./PaymentSplitter.sol";
 /*
 * @title ERC1155 token for Unknow cards
 */
+
+/*
+1. 数量改为100万，
+2. 收发在币安，后面kucoin，gateio
+3. 希望初期2次销售，限定（尽量）我们平台，OS，和3个去中心化。
+4. 对应ETH和bsc链即可。可以的话，gateio链。
+*/
+
 contract AdidasOriginals is AbstractERC1155Factory, PaymentSplitter  {
 
-    uint256 constant MAX_SUPPLY = 30000;
+    uint256 tokenId = 0;
+    uint256 amountMinted = 0;
+    uint256 constant MAX_SUPPLY = 1e6;
     uint256 constant MAX_EARLY_ACCESS = 20380;
 
     uint8 maxPerTx = 2;
