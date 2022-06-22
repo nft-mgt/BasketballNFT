@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/nft-mgt/BasketballNFT#readme",
   "dependencies": {
+    "@openzeppelin/contracts": "^4.6.0",
     "hardhat": "^2.9.9"
   },
   "devDependencies": {
